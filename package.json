@@ -1,5 +1,5 @@
 {
-  "name": "react-native-mux-video",
+  "name": "@tinyhood/react-native-mux-video",
   "version": "0.1.0",
   "description": "A wrapper around react-native-video that integrates Mux Data.",
   "main": "lib/commonjs/index",

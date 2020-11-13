@@ -228,6 +228,7 @@ const MuxVideo = React.forwardRef(
         onSeek={_onSeek}
         onLoad={_onLoad}
         onPlaybackRateChange={_onPlaybackRateChange}
+        paused={paused}
         progressUpdateInterval={MIN_REBUFFER_DURATION}
         onFullscreenPlayerDidPresent={_onFullscreenPlayerDidPresent}
         onFullscreenPlayerDidDismiss={_onFullscreenPlayerDidDismiss}
