@@ -34,13 +34,17 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/jackspiva/react-native-mux-video",
+  "repository": "https://github.com/tinyhood/react-native-mux-video",
   "author": "Jack Spiva <johnspiva@gmail.com> (https://github.com/jackspiva)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jackspiva/react-native-mux-video/issues"
+    "url": "https://github.com/tinyhood/react-native-mux-video/issues"
   },
-  "homepage": "https://github.com/jackspiva/react-native-mux-video#readme",
+  "homepage": "https://github.com/tinyhood/react-native-mux-video#readme",
+  "dependencies": {
+    "@types/react-native-video": "^5.0.3",
+    "mux-embed": "^3.2"
+  },
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "@react-native-community/bob": "^0.16.2",
@@ -64,7 +68,8 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-video": "^5.0"
   },
   "jest": {
     "preset": "react-native",
@@ -119,7 +124,10 @@
       ]
     }
   },
-  "eslintIgnore": ["node_modules/", "lib/"],
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ],
   "prettier": {
     "quoteProps": "consistent",
     "singleQuote": true,
@@ -130,6 +138,10 @@
   "@react-native-community/bob": {
     "source": "src",
     "output": "lib",
-    "targets": ["commonjs", "module", "typescript"]
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
   }
 }
