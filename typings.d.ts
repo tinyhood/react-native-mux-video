@@ -1,5 +1,6 @@
 declare module 'mux-embed' {
   export const emit: any;
+  export const log: any;
   export const utils: {
     secondsToMs: (seconds: number) => number;
   };
